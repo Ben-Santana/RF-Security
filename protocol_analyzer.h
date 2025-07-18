@@ -111,7 +111,7 @@ public:
     void start_frequency_scan();
     void stop_frequency_scan();
     bool is_scanning() const { return scanning_active; }
-    void update_scan(); // call this periodically to advance scan
+    void update_scan(); // call this every once and a while to advance scan
     
     // signal detection and analysis
     bool detect_signals(const std::vector<std::complex<float>>& iq_data);
